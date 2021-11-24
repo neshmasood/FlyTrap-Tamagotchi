@@ -1,1 +1,3 @@
 # FlyTrap-Tamagotchi
+
+User will buy a new fly trap and name it. User will help the plant fly trap grow from bud to ‘adult’ (as it ages). For the plant to grow, it needs flies, sunshine and water. The amount of these input consumed will change every second and the user has to replenish. The display will show the status/level of each input (updated every second). If the input level is low, the plant with start to wither. The plant will ask to feed it when levels are too low. When a fly is fed, you’ll see a fly. When water is given, you’ll see water drops. You’ll see sunshine for the sun. You can only provide one of the inputs each is the second; which will be the challenge.
