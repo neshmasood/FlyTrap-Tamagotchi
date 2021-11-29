@@ -1,5 +1,5 @@
 // Define all variables
-let name = "input-name";
+let name;
 let health;
 let waterAmount = 4;
 let foodAmount = 4;
@@ -12,24 +12,25 @@ hideImages();
 // foodLow();
 // sunshineLow();
 // changePlantImages();
+// gameOver();
 
 
 
 health = waterAmount + foodAmount + sunshineAmount;
 
-// Event listners for clicking of resource button
+// Event listners for clicking of resource buttons
 
 document.getElementById("drink").addEventListener("click", addWater);
 document.getElementById("eat").addEventListener("click", addFood);
 document.getElementById("sun").addEventListener("click", addSun);
 
+document.getElementById("input-button").addEventListener("click", startGame);
 
 
 
 
 function startGame(){
-    let name = document.getElementById("input-name").value;
-    document.getElementById("input-button").addEventListener("click", PLAY);
+   name = document.getElementById("input-name").value;
 
 }
 // Write a function to hide all images
@@ -115,6 +116,13 @@ function addSun (){
     sunshineAmount = sunshineAmount + Math.floor(Math.random()* 4 +1);  
 }
 
+// To show dead plant and hide Div 
+
+function gameOver(){
+    document.getElementById("gameOver").style.visibility = "visible";
+    document.getElementById("flyPlant").src = "images/flytrap_0.jpg";
+
+}
 
 
 

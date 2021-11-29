@@ -11,6 +11,14 @@
 
 </head> 
 <body>
+    <!-- Input Form -->
+    <div class="container1" id="start-form">
+        <div class="field-name">
+            <label>Name Your Plant</label>
+            <input type="text" class="input" id="input-name">
+            <button type= "submit" class="start-game-btn" id="input-button">PLAY</button>
+        </div>
+    </div>
         <!-- Water metrics -->
     <section class="game-area water">
         <button type="button" class="water-btn" id="drink">Water</button>
@@ -34,8 +42,7 @@
     </section>
     <section>
         <img src="images/flytrap_1.jpg" alt="flyTrap Plant" class="stage1" id="flyPlant"> 
-     </section>
-
+    </section>
     <section>
         <img src="/images/needwater.jpg" alt="need water" class="" id="thirsty">
         <img src="/images/needfood.jpg" alt="need food" id="hungry">
@@ -44,12 +51,14 @@
         <img src="/images/fly.jpg" alt="fly" id="flyImage"> 
         <img src="/images/sun.jpg" alt="sun" id="sunImage"> 
     </section>
-    <!-- Replenish window - Create a display box: flex -->
-    <section class="game-area2">
-        <div class="subtitle" id = "water">Water Amount:</div>
-        <div class="subtitle" id ="food">Food Amount:</div>
-        <div class="subtitle" id= "sun">Sunshine Amount:</div>
+     <!-- want this to pop up if age is below 1. -->
+     <section>
+        <div id="gameOver" style="visibility:hidden">
+            <p>You killed the plant.</p>
+            <form class="start-form">
+                <button class="restart-btn">Try again</button>
+            </form>
         </div>
-    </section>
+    </section> 
 </body>
 </html>
