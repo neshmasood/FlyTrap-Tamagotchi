@@ -1,17 +1,21 @@
 // Define all variables
-    let name = "input-name";
-    let health;
-    let waterAmount = 4;
-    let foodAmount =4;
-    let sunshineAmount = 4;
-    let setInterval = 3000;
-    let lowestLevel = 4; //lowest level for plant to talk
+let name = "input-name";
+let health;
+let waterAmount = 4;
+let foodAmount = 4;
+let sunshineAmount = 4;
+let setInterval = 3000;
+let lowestLevel = 4; //lowest level for plant to talk
 
-    // hideImages();
-    // waterLow();
-    // foodLow();
-    // sunshineLow();
+// hideImages();
+// waterLow();
+// foodLow();
+// sunshineLow();
+// changePlantImages();
 
+
+
+health = waterAmount + foodAmount + sunshineAmount;
 
 
 function startGame(){
@@ -29,7 +33,7 @@ function hideImages() {
     document.getElementById("flyImage").style.visibility = "hidden";
     document.getElementById("sunImage").style.visibility = "hidden";
 
-  }
+ }
 
 
 //   Write a function to reduce value
@@ -65,37 +69,30 @@ function sunshineLow(){
 // Write a function to change Plant images based on health value
 
 function changePlantImages(){
-    if(waterAmount =0 && (foodAmount = 0) && (sunshineAmout = 0)){
-        gameOver();
-        document.getElementsById("deadPlant").style.visibility = "visible";
-    }else if(waterAmount <=9 || waterAmount == 1){
-        document.getElementsById("babyPlant").style.visibility = "visible";
-    }
-}
- 
-function changePlantImages(){
-    if(waterAmount =0 && (foodAmount = 0) && (sunshineAmout = 0)){
-        gameOver();
-        document.getElementsById("deadPlant").style.visibility = "visible";
-    }else if(waterAmount <=9 || waterAmount == 1){
-        document.getElementsById("babyPlant").style.visibility = "visible";
-    }
-}
 
-function changePlantImages(){
-    if(waterAmount =0 && (foodAmount = 0) && (sunshineAmout = 0)){
-        gameOver();
-        document.getElementsById("deadPlant").style.visibility = "visible";
-    }else if(waterAmount <=9 || waterAmount == 1){
-        document.getElementsById("babyPlant").style.visibility = "visible";
+    if (health == 0){
+        document.getElementById("flyPlant").src = "images/flytrap_0.jpg";
+    } else if(health <=9 && health >=1){
+        document.getElementById("flyPlant").src = "images/flytrap_1.jpg";
+    } else if(health <=16 && health >=10){
+        document.getElementById("flyPlant").src = "images/flytrap_2.jpg";
+    }else if(health <=23 && health >=17){
+        document.getElementById("flyPlant").src = "images/flytrap_3.jpg";
+    }else if(health <=30 && health >=18){
+        document.getElementById("flyPlant").src = "images/flytrap_4.jpg";
     }
 }
 
 
-// Write a function for button clicks
+
+
+
+// Event listners for clicking of resource button
+
+// document.getElementById("drink").addEventListener("click", func);
 
 // function waterButton(){
-//     document.getElementById("drink").addEventListener("click","waterDropsImage");
+//     document.getElementById("drink").addEventListener("click", func);
 // }
 
 
