@@ -4,121 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.main.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script defer src="script.js"></script>
+    <script defer src="scripts/script.js"></script>
     <title>Fly Trap</title>
 
 </head> 
 <body>
-    <section></section>
-        <div>
-            <h3>WELCOME</h3>
-            <p id="mainText">Help me grow from a bud to an adult plant. Provide the following. Don't let my age go below 1.</p>
-            <img src="">
-        </div>
-
+        <!-- Water metrics -->
+    <section class="game-area water">
+        <button type="button" class="water-btn" id="drink">Water</button>
     </section>
-    <!-- Input Form -->
-    <div class="container" id="input-form">
-        <div class="field name">
-            <label>Name Your Plant</label>
-            <input type="text" class="input" id="input-name">
-            <button class="btn" id="input-button">PLAY</button>
-        </div>
-    </div>
-    <!-- Replenish window -->
-<!-- 
-    <div class="container" id="thirsty">
-        <p>Need Water!</p>
-    </div>
-
-    <div class="container" id="hungry">
-        <p>Feed Me!</p>
-    </div>
-
-    <div class="container" id="light">
-        <p>Need Sunshine!</p>
-    </div> -->
-
-    <!-- Header Section -->
-
-    <header class="header">
-        <div class="header left">
-            <div class="container">
-                <p>Name:<span id="span-name"></span></p>
-            </div>
-        </div>
-        <div class="header middle"></div>
-        <div class="header right">
-            <div class="container">
-                <p>Age:<span id="span-age"></span></p>
-            </div>
-        </div>
-    </header>
-    <!-- Game Section -->
-
-    <!-- Water metrics -->
-        <section class="game-area water">
-            <button type="button" class="btn water" id="drink">Water</button>
-            </div>
-                <!-- <div class="bar" id="water_bar"></div> -->
-            </div>
-        </section>
 
     <!-- Food metrics -->
-        <section class="game-area food">
-            <button type="button" class="btn food" id="eat">Food</button>
-                <!-- <div class="bar" id="food_bar"></div> -->
-            </div>
-        </section>
+    <section class="game-area food">
+        <button type="button" class="food-btn" id="eat">Food</button>
+    </section>
 
     <!-- Sun metrics -->
-        <section class="game-area sun">
-            <button type="button" class="btn sunshine" id="sun">Sunshine</button>
-            <div class="plant is dead">
-                <!-- <div class="bar" id="sun_bar"></div> -->
-            </div>
-        </section>
+    <section class="game-area sun">
+        <button type="button" class="sunshine-btn" id="sun">Sunshine</button>
+    </section>
+    <section>
+        <img src="/images/flytrap_1.jpg" alt="flyTrap Plant" class="stage1" id="flyPlant"> 
+     </section>
 
-        <!-- Create a display box: flex -->
-        <section class="game-area">
-            <div class="subtitle">Water Amount:</div>
-            <div class="subtitle">Food Amount:</div>
-            <div class="subtitle">Sunshine Amount:</div>
-            </div>
-        </section>
-
-         <!-- game area Fly Trap image -->
-         <section>
-            <img src="" alt="" class="" id=""> 
-        </section>
-
-        <!-- game area fly trap image -->
-        <section>
-            <img src="" alt="" class="" id="">
-            <img src="" alt="" class="" id="">
-            <img src="" alt="" class="" id="">  
-        </section>
-
-        <!-- Create a display box on bottom right: flex? Create a container/box and place all there in -->
-        <section id="game-area attribute">
-            <ul>
-                <li class="attribute" id="water">Water: 10</li>
-                <li class="attribute" id="food">Food: 10</li>
-                <li class="attribute" id="sunshine">Sun: 10</li>
-            </ul>
-        </section>
-
-    <!-- want this to pop up if age is below 1. -->
-
-        <section>
-            <div class="container">
-                <p>Your plant is <span></span>dead.</span></p>
-            </div>
-        </section>
-
-       
-
+    <section>
+        <img src="/images/needwater.jpg" alt="need water" class="" id="thirsty">
+        <img src="/images/needfood.jpg" alt="need food" id="hungry">
+        <img src="/images/needsun.jpg" alt="need energy" id="sunlight">  
+        <img src="/images/water.jpg" alt="waterDrops" id="waterDropsImage"> 
+        <img src="/images/fly.jpg" alt="fly" id="flyImage"> 
+        <img src="/images/sun.jpg" alt="sun" id="sunImage"> 
+    </section>
+    <!-- Replenish window - Create a display box: flex -->
+    <section class="game-area2">
+        <div class="subtitle" id = "water">Water Amount:</div>
+        <div class="subtitle" id ="food">Food Amount:</div>
+        <div class="subtitle" id= "sun">Sunshine Amount:</div>
+        </div>
+    </section>
 </body>
 </html>
