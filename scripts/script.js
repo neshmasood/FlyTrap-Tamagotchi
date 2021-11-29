@@ -7,7 +7,7 @@ let sunshineAmount = 4;
 let setInterval = 3000;
 let lowestLevel = 4; //lowest level for plant to talk
 
-// hideImages();
+hideImages();
 // waterLow();
 // foodLow();
 // sunshineLow();
@@ -16,6 +16,15 @@ let lowestLevel = 4; //lowest level for plant to talk
 
 
 health = waterAmount + foodAmount + sunshineAmount;
+
+// Event listners for clicking of resource button
+
+document.getElementById("drink").addEventListener("click", addWater);
+document.getElementById("eat").addEventListener("click", addFood);
+document.getElementById("sun").addEventListener("click", addSun);
+
+
+
 
 
 function startGame(){
@@ -87,14 +96,24 @@ function changePlantImages(){
 
 
 
-// Event listners for clicking of resource button
 
-// document.getElementById("drink").addEventListener("click", func);
+//Make water drops visible and increases water value by a random
+function addWater (){
+    document.getElementById("waterDropsImage").style.visibility = "visible"; 
+    waterAmount = waterAmount + Math.floor(Math.random()* 4 +1);
+}
 
-// function waterButton(){
-//     document.getElementById("drink").addEventListener("click", func);
-// }
+//Make fly visible and increases food value by a random
+function addFood (){
+    document.getElementById("flyImage").style.visibility = "visible"; 
+    foodAmount = foodAmount + Math.floor(Math.random()* 4 +1);
+}
 
+//Make sun visible and increases sun value by a random
+function addSun (){
+    document.getElementById("sunImage").style.visibility = "visible"; 
+    sunshineAmount = sunshineAmount + Math.floor(Math.random()* 4 +1);  
+}
 
 
 
