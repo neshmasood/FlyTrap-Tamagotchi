@@ -13,12 +13,26 @@
 <body>
     <!-- Input Form -->
     <div class="container1" id="start-form">
+        <div>
+            <h3>WELCOME</h3>
+            <p id="mainText">Help me grow from a bud to an adult plant. Don't let my health go below 1.</p>
+        </div>
         <div class="field-name">
             <label>Name Your Plant</label>
             <input type="text" class="input" id="input-name">
             <button type= "submit" class="start-game-btn" id="input-button">PLAY</button>
         </div>
     </div>
+     <!-- Header Section -->
+
+     <header class="header">
+        <div class="header right">
+            <div class="container">
+                <p>Name:<span id="span-name"></span></p>
+                <p>Health: <span id="span-health"></span></p>
+            </div>
+        </div>
+    </header>
         <!-- Water metrics -->
     <section class="game-area water">
         <button type="button" class="water-btn" id="drink">Water</button>
@@ -35,10 +49,10 @@
     </section>
      <!-- Replenish window - Create a display box: flex -->
      <section class="game-area2">
-        <div class="subtitle" id = "water">Water Amount:</div>
-        <div class="subtitle" id ="food">Food Amount:</div>
-        <div class="subtitle" id= "sun">Sunshine Amount:</div>
-        </div>
+        <p id = "waterText">Water Amount:</p>
+        <p id ="foodText">Food Amount:</p>
+        <p id= "sunText">Sunshine Amount:</p>
+    
     </section>
     <section>
         <img src="images/flytrap_1.jpg" alt="flyTrap Plant" class="stage1" id="flyPlant"> 

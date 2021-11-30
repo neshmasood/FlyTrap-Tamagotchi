@@ -1,13 +1,13 @@
 // Define all variables
-let name;
+let plantName;
 let health;
 let waterAmount = 4;
 let foodAmount = 4;
 let sunshineAmount = 4;
-let setInterval = 3000;
+let intervalTime = 3000;
 let lowestLevel = 4; //lowest level for plant to talk
 
-hideImages();
+// hideImages();
 // waterLow();
 // foodLow();
 // sunshineLow();
@@ -30,10 +30,44 @@ document.getElementById("input-button").addEventListener("click", startGame);
 
 
 function startGame(){
-   name = document.getElementById("input-name").value;
-
+    plantName = document.getElementById("input-name").value;
+    let myVar = setInterval(loop, intervalTime);
 }
-// Write a function to hide all images
+
+
+// Setup loop function
+    
+function loop(){
+    hideImages();
+    reduceValue();
+    changePlantImages();
+
+    health = waterAmount + foodAmount + sunshineAmount;
+
+    document.getElementById("waterText").innerHTML = "Water level: " + waterAmount;
+    document.getElementById("foodText").innerHTML = "Food level: " + foodAmount;
+    document.getElementById("sunText").innerHTML = "Sun level: " + sunshineAmount;
+    document.getElementById("span-health").innerHTML = Math.round(health/30 * 100) + "%";
+    
+
+    if (waterAmount <= 4){
+        waterLow();
+    }
+    if (foodAmount <= 4){
+        foodLow();
+    }
+    if (sunshineAmount <= 4){
+        sunshineLow();
+    }
+    if (waterAmount == 0 || foodAmount == 0 || sunshineAmount == 0){
+        gameOver();
+        clearInterval();
+
+    }   
+}
+
+
+// function to hide all images
 
 function hideImages() {
     document.getElementById("thirsty").style.visibility = "hidden";
@@ -46,17 +80,28 @@ function hideImages() {
  }
 
 
-//   Write a function to reduce value
+// function to reduce value
   function reduceValue(){
 
-    waterAmount = waterAmount - Math.floor(Math.random()*2 +1);
-
-    foodAmount = foodAmount - Math.floor(Math.random()*2 +1);
-
-    sunshineAmount = sunshineAmount - Math.floor(Math.random()*2 +1);
+    if (waterAmount >= 2){
+        waterAmount = waterAmount - Math.floor(Math.random()*3);
+    }else if (waterAmount == 1){
+        waterAmount = 0;
+    }
+    if (foodAmount >= 2){
+        foodAmount = foodAmount - Math.floor(Math.random()*3);
+    }else if (foodAmount == 1){
+        foodAmount = 0;
+    }
+    if (sunshineAmount >= 2){
+        sunshineAmount = sunshineAmount - Math.floor(Math.random()*3);
+    }else if (sunshineAmount == 1){
+        sunshineAmount = 0;
+    }
   }
+    
 
-//   Write a function for Low level of waterAmount, foodAmount, sunshineAmount
+//   function for Low level of waterAmount, foodAmount, sunshineAmount
 function waterLow(){
       if(waterAmount <= lowestLevel){
         document.getElementById("thirsty").style.visibility = "visible";  
@@ -76,7 +121,7 @@ function sunshineLow(){
 
 
 
-// Write a function to change Plant images based on health value
+// function to change Plant images based on health value
 
 function changePlantImages(){
 
@@ -94,26 +139,34 @@ function changePlantImages(){
 }
 
 
-
-
-
-
 //Make water drops visible and increases water value by a random
 function addWater (){
     document.getElementById("waterDropsImage").style.visibility = "visible"; 
-    waterAmount = waterAmount + Math.floor(Math.random()* 4 +1);
+    if (waterAmount <= 7){
+        waterAmount = waterAmount + Math.floor(Math.random()* 3 +1);
+    }else if (waterAmount > 7){
+        waterAmount = 10;
+    }
 }
 
 //Make fly visible and increases food value by a random
 function addFood (){
     document.getElementById("flyImage").style.visibility = "visible"; 
-    foodAmount = foodAmount + Math.floor(Math.random()* 4 +1);
+    if (foodAmount <= 7){
+        foodAmount = foodAmount + Math.floor(Math.random()* 3 +1);
+    }else if (foodAmount > 7){
+        foodAmount = 10;
+    }
 }
 
 //Make sun visible and increases sun value by a random
 function addSun (){
     document.getElementById("sunImage").style.visibility = "visible"; 
-    sunshineAmount = sunshineAmount + Math.floor(Math.random()* 4 +1);  
+    if (sunshineAmount <= 7){
+        sunshineAmount = sunshineAmount + Math.floor(Math.random()* 3 +1);
+    }else if (sunshineAmount > 7){
+        sunshineAmount = 10;
+    }
 }
 
 // To show dead plant and hide Div 
@@ -127,7 +180,9 @@ function gameOver(){
 
 
 
-
+// function fun(){  
+//     document.getElementById("myForm").reset();  
+//   } 
 
 
 
