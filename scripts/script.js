@@ -15,6 +15,9 @@ let lowestLevel = 4; //lowest level for plant to talk
 // gameOver();
 
 
+document.getElementById("input-name").innerHTML = 
+
+
 
 health = waterAmount + foodAmount + sunshineAmount;
 
@@ -31,6 +34,8 @@ document.getElementById("input-button").addEventListener("click", startGame);
 
 function startGame(){
     plantName = document.getElementById("input-name").value;
+    document.getElementById("span-name").innerHTML = plantName;
+
     let myVar = setInterval(loop, intervalTime);
 }
 
@@ -48,7 +53,7 @@ function loop(){
     document.getElementById("foodText").innerHTML = "Food level: " + foodAmount;
     document.getElementById("sunText").innerHTML = "Sun level: " + sunshineAmount;
     document.getElementById("span-health").innerHTML = Math.round(health/30 * 100) + "%";
-    
+
 
     if (waterAmount <= 4){
         waterLow();
