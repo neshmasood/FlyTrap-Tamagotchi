@@ -71,16 +71,17 @@ function loop(){
     }   
 }
 
+// COME BACK AND HIDE IMAGES
 
 // function to hide all images
 
 function hideImages() {
-    document.getElementById("thirsty").style.visibility = "hidden";
-    document.getElementById("hungry").style.visibility = "hidden";
-    document.getElementById("sunlight").style.visibility = "hidden";
-    document.getElementById("waterDropsImage").style.visibility = "hidden";
-    document.getElementById("flyImage").style.visibility = "hidden";
-    document.getElementById("sunImage").style.visibility = "hidden";
+    document.getElementById("thirsty").style.visibility = "visible";
+    document.getElementById("hungry").style.visibility = "visible";
+    document.getElementById("sunlight").style.visibility = "visible";
+    document.getElementById("waterDropsImage").style.visibility = "visible";
+    document.getElementById("flyImage").style.visibility = "visible";
+    document.getElementById("sunImage").style.visibility = "visible";
 
  }
 

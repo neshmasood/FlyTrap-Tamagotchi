@@ -11,68 +11,64 @@
 
 </head> 
 <body>
-    <!-- Input Form -->
-    <div class="container1" id="start-form">
-        <div>
-            <h3>WELCOME</h3>
-            <p id="mainText">Help me grow from a bud to an adult plant. Don't let my health go below 1.</p>
-        </div>
-        <div class="field-name">
-            <label>Name Your Plant</label>
-            <input type="text" class="input" id="input-name">
-            <button type= "submit" class="start-game-btn" id="input-button">PLAY</button>
-        </div>
-    </div>
      <!-- Header Section -->
-
-     <header class="header">
-        <div class="header right">
-            <div class="container">
-                <p>Plant Name:<span id="span-name"></span></p>
-                <p>Health: <span id="span-health"></span></p>
+    <header class="header">
+        <div class="infoContainer" id="start-form">
+            <div>
+                <h3>WELCOME</h3>
+                <p id="mainText">Help me grow from a bud to an adult plant. Don't let my health go below 1.</p>
             </div>
         </div>
     </header>
-        <!-- Water metrics -->
-    <section class="game-area water">
-        <button type="button" class="water-btn" id="drink">Water</button>
-    </section>
-
-    <!-- Food metrics -->
-    <section class="game-area food">
-        <button type="button" class="food-btn" id="eat">Food</button>
-    </section>
-
-    <!-- Sun metrics -->
-    <section class="game-area sun">
-        <button type="button" class="sunshine-btn" id="sun">Sunshine</button>
+        <div class="field-name">
+            <label>Name Your Plant</label><br>
+            <input type="text" class="input" id="input-name"><br>
+            <button type= "submit" class="start-game-btn" id="input-button">PLAY</button>
+        </div>
+    <!-- Input Form -->
+        <div class="nameContainer">
+            <p>Plant Name: <span id="span-name"></span></p>
+            <p>Health: <span id="span-health"></span></p>
+        </div>
+        <!-- Resource Buttons -->
+    <section class="game-area1-Container">
+        <button type="button" class="water-btn" id="drink">Water</button><br>
+        <button type="button" class="food-btn" id="eat">Food</button><br>
+        <button type="button" class="sunshine-btn" id="sun">Sunshine</button><br>
     </section>
      <!-- Replenish window - Create a display box: flex -->
-     <section class="game-area2">
+    <section class="game-area2-Container">
         <p id = "waterText">Water Amount:</p>
         <p id ="foodText">Food Amount:</p>
         <p id= "sunText">Sunshine Amount:</p>
     
     </section>
     <section>
+        <div class="parent-div">
         <img src="images/flytrap_1.jpg" alt="flyTrap Plant" class="stage1" id="flyPlant"> 
+        </div>
     </section>
     <section>
-        <img src="/images/needwater.jpg" alt="need water" class="" id="thirsty">
-        <img src="/images/needfood.jpg" alt="need food" id="hungry">
-        <img src="/images/needsun.jpg" alt="need energy" id="sunlight">  
-        <img src="/images/water.jpg" alt="waterDrops" id="waterDropsImage"> 
-        <img src="/images/fly.jpg" alt="fly" id="flyImage"> 
-        <img src="/images/sun.jpg" alt="sun" id="sunImage"> 
+        <div class = "">
+            <img src="/images/needfood.jpg" alt="need food" id="hungry">
+            <img src="/images/needsun.jpg" alt="need energy" id="sunlight"> 
+            <img src="/images/needwater.jpg" alt="need water" class="" id="thirsty"> 
+            <img src="/images/fly.jpg" alt="fly" id="flyImage"> 
+            <img src="/images/water.jpg" alt="waterDrops" id="waterDropsImage"> 
+            <img src="/images/sun.jpg" alt="sun" id="sunImage"> 
+        </div>
     </section>
      <!-- want this to pop up if age is below 1. -->
-     <section>
-        <div id="gameOver" style="visibility:hidden">
+    <section>
+        <div id="gameOver" class="gameOver-box" style="visibility:hidden">
             <p>You killed the plant.</p>
             <form class="start-form">
                 <button class="restart-btn">Try again</button>
             </form>
         </div>
-    </section> 
+    </section>
+    <footer>
+        <img>
+    </footer> 
 </body>
 </html>
