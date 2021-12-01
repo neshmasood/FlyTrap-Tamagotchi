@@ -1,14 +1,18 @@
-Project name: FlyTrap-Tamagotchi
+# Project name: FlyTrap-Tamagotchi
 
-User Objective:
+First project in GA was to create a tamagotchi game. I chose the Fly Trap because my kids recently got a Venus Fly Trap, which I have been taking care of and thought it’ll be interesting since we have to make sure it gets enough food, sunlight and water. 
 
-   1. User will buy a new fly trap plant and name it. User will click PLAY and begin the journey to help their fly trap plant grow from bud to ‘adult’ (as it ages). 
-   2. For the plant to grow, it needs flies, sunshine and water. The amount of these resources consumed will change every three seconds and the user has to replenish.
-   3. The display will show the status/level of each input (updated every three seconds). If the food input level is low (4 or less), the plant will ask to feed it. When food button is clicked, a fly will appear.
-   4. If the water input level is low (4 or less), the plant will ask to water it. When water button is clicked, water drops will appear.
-   5. If the sunshine input level is low (4 or less), the plant will ask to give it some energy. When sunshine button is clicked, sun will appear.
-   6. User can only provide one of these resources at a time; which will be the challenge.
-   7. Once the plant's health reaches 0%, it will wither, a message will appear and user will have the option to try again. 
+# User Objective:
+
+   1. The user buys a new fly trap plant and has to name it. User will click PLAY and begin the journey to help their fly trap plant grow from bud to ‘adult’ (as it ages). 
+   2. For the plant to grow, it needs flies, sunshine and water. The amount of these resources consumed will decrease by random amounts (1-3) every three seconds and the user has to replenish them by clicking buttons.
+   3. The display will show the status/level of each input/resource (updated every three seconds). If the any inputs level is low (4 or less), the plant will ask to feed it. When the resource button is clicked, an image of the resource will appear.
+   4. If any of the inputs reaches 0 the plant will wither and die, a message will appear and user will have the option to try again. 
+
+
+
+# Sketches of the game:
+
 
 
 
