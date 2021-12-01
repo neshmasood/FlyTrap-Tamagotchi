@@ -178,8 +178,9 @@ function addSun (){
 // To show dead plant and hide Div 
 
 function gameOver(){
-    document.getElementById("gameOver").style.visibility = "visible";
+    document.getElementById("gameOverDiv").style.visibility = "visible";
     document.getElementById("flyPlant").src = "images/flytrap_0.jpg";
+    hideImages();
 
 }
 
