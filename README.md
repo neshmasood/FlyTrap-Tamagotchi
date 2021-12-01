@@ -1,8 +1,8 @@
-# Project name: FlyTrap-Tamagotchi
+- Project name: FlyTrap-Tamagotchi
 
 First project in GA was to create a tamagotchi game. I chose the Fly Trap because my kids recently got a Venus Fly Trap, which I have been taking care of and thought it’ll be interesting since we have to make sure it gets enough food, sunlight and water. 
 
-# User Objective:
+- User Objective:
 
    1. The user buys a new fly trap plant and has to name it. User will click PLAY and begin the journey to help their fly trap plant grow from bud to ‘adult’ (as it ages). 
    2. For the plant to grow, it needs flies, sunshine and water. The amount of these resources consumed will decrease by random amounts (1-3) every three seconds and the user has to replenish them by clicking buttons.
@@ -10,8 +10,17 @@ First project in GA was to create a tamagotchi game. I chose the Fly Trap becaus
    4. If any of the inputs reaches 0 the plant will wither and die, a message will appear and user will have the option to try again. 
 
 
+- Approach taken:
+  
+This game was made using the combination of vanilla JavaScript, html, and Bootstrap for css styling.
 
-# Sketches of the game:
+  
+- Github repo link:
+  
+  https://github.com/neshmasood/FlyTrap-Tamagotchi
+  
+
+
 
 
 
