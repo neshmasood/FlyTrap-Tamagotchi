@@ -1,12 +1,12 @@
 *{
-    margin:1px;
-    padding:1px;
+    margin: 5px;
+    padding:5px;
   }
 
   .header {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    background: #1abc9c;
+    background: #13d0f1;
     color: white;
     font-size: 15px;
   }
@@ -26,14 +26,12 @@
   }
 
   .game-area1-Container {
-      display: absolute;
-      flex-direction: column;
-      justify-content: center;
+        height: 50%;
+        width: 50%;
+        display: absolute;
+        background-position: center;
+    }
 
-
-
-
-  }
 
   .game-area2-Container {
       display: absolute;
@@ -41,38 +39,16 @@
       
 }
 
-.parent-div {
+.plant-Images {
     text-align: center;
     display: flex;
     justify-content: center;
-    
-
-      
-}
-
-.gameOver {
       
 }
 
 #hungry {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    /* position: relative; */
-    top: 50%;
-    right: 20%;
-    /* width: 200px;
-    height: 200px; */
-    /* text-align: center;
-    position: absolute; */
-
-    /* position: absolute; 
-    margin-right: 10px;
-    text-align: center;
-    left: 65px; 
-    top: 15px; 
-    border: none; */
-  
+    display: flex;
+    margin-right: 100%
 
 }
 
@@ -103,20 +79,10 @@
     
 }
 .gameOver-box {
-       
     
-    
-
 
 }
 
-
-/* p { */
-    /* background-color: rgb(253, 249, 249); */
-    /* color: red;
-    padding: 50px;
-} */
-
-/* h3 {
-    color: green;
-} */
+.gameOver {
+      
+}
