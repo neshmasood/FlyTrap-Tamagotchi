@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="styles/main.css"/> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script defer src="scripts/script.js"></script>
     <title>Fly Trap</title>
@@ -13,7 +12,7 @@
 <body>
        <!-- Header Section -->
     <div class="row bg-success">
-        <h3 class="text-center">WELCOME</h3>
+        <h3 class="text-center font-weight-bold">WELCOME</h3>
         <p class="text-white text-center" id="mainText">Help me grow from a bud to an adult plant. Don't let my resources go below 1.</p>
     </div>
 <!-- Input Form -->
@@ -21,8 +20,8 @@
         <div class="col-5"></div>
         <div class = "col">
             <label class="text-primary">Name Your Plant</label><br>
-            <input type="text" id="input-name"><br>
-            <button type= "submit" class="start-game-btn btn btn-success btn-sm" id="input-button">PLAY</button>
+            <input class="border-primary rounded" type="text" id="input-name"><br>
+            <button type= "submit" class="btn btn-success btn-sm btn-block" id="input-button">PLAY</button>
         </div>
         <div class="col-5"></div>
     </div>
@@ -36,32 +35,18 @@
         <div class="col">
             <div class="row">
                 <div class="col">
-                    <img class="mx-auto d-block" src="/images/fly.jpg" alt="fly" id="flyImage" style="height:50%; visibility:hidden"> 
+                    <img class="mx-auto d-block" src="./images/fly.jpg" alt="fly" id="flyImage" style="height:50%; visibility:hidden"> 
                 </div>
                 <div class="col">
-                    <img class="mx-auto d-block" src="/images/sun.jpg" alt="sun" id="sunImage" style="height:50%; visibility:hidden" >
+                    <img class="mx-auto d-block" src="./images/sun.jpg" alt="sun" id="sunImage" style="height:50%; visibility:hidden" >
                 </div>
                 <div class="col">
-                    <img class="mx-auto d-block" src="/images/water.jpg" alt="waterDrops" id="waterDropsImage" style="height:50%; visibility:hidden"> 
+                    <img class="mx-auto d-block" src="./images/water.jpg" alt="waterDrops" id="waterDropsImage" style="height:50%; visibility:hidden"> 
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col">
-                    <img src="/images/needfood.jpg" alt="need food" id="hungry" style="height:75%;
-                    width:75%; visibility:visible">
-                </div>
-                <div class="col">
-                    <img src="/images/needsun.jpg" alt="need energy" id="sunlight" style="height:75%;
-                    width:75%; visibility:visible">                 
-                </div>
-                <div class="col">
-                    <img src="/images/needwater.jpg" alt="need water" id="thirsty" style="height:75%;
-                    width:75%; visibility:visible"> 
-                </div>
-            </div> -->
             <div class="row">
                 <div class="col-5">
-                    <img class="mx-auto d-block" src="/images/needfood.jpg" alt="need food" id="hungry" style="height:25%;
+                    <img class="mx-auto d-block" src="./images/needfood.jpg" alt="need food" id="hungry" style="height:25%;
                     width:25%; visibility:hidden">
                 </div>
                 <div class="col">
@@ -76,20 +61,20 @@
                     </div>
                 </div>
                 <div class="col-5">
-                    <img src="/images/needsun.jpg" alt="need energy" id="sunlight" style="height:25%;
+                    <img src="./images/needsun.jpg" alt="need energy" id="sunlight" style="height:25%;
                     width:25%; visibility:hidden">   
-                    <img src="/images/needwater.jpg" alt="need water" id="thirsty" style="height:25%;
+                    <img src="./images/needwater.jpg" alt="need water" id="thirsty" style="height:25%;
                     width:25%; visibility:hidden"> 
                 </div>
             </div>
         </div>
             <!-- Resource Level -->
         <div class="col-2">
-            <p class="text-primary">Plant Name: <span id="span-name"></span></p>
-            <p class="text-primary">Health: <span id="span-health"></span></p>
-            <p id = "waterText">Water Amount:</p>
-            <p id ="foodText">Food Amount:</p>
-            <p id= "sunText">Sunshine Amount:</p>
+            <p class="text-success">Plant Name: <span id="span-name"></span></p>
+            <p class="text-success">Health: <span id="span-health"></span></p>
+            <p class="text-primary h6 font-weight-bold" id = "waterText">Water Amount:</p>
+            <p class="text-danger h6 font-weight-bold" id ="foodText">Food Amount:</p>
+            <p class="text-warning h6 font-weight-bold" id= "sunText">Sunshine Amount:</p>
         </div>
     </div>
 </body>
