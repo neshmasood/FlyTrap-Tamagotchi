@@ -22,7 +22,7 @@
         <div class = "col">
             <label class="text-primary">Name Your Plant</label><br>
             <input type="text" id="input-name"><br>
-            <button type= "submit" class="start-game-btn" id="input-button">PLAY</button>
+            <button type= "submit" class="start-game-btn btn btn-success btn-sm" id="input-button">PLAY</button>
         </div>
         <div class="col-5"></div>
     </div>
@@ -36,31 +36,34 @@
         <div class="col">
             <div class="row">
                 <div class="col">
-                    <img class="mx-auto d-block" src="/images/fly.jpg" alt="fly" id="flyImage" style="height:50%;"> 
+                    <img class="mx-auto d-block" src="/images/fly.jpg" alt="fly" id="flyImage" style="height:50%; visibility:hidden"> 
                 </div>
                 <div class="col">
-                    <img class="mx-auto d-block" src="/images/sun.jpg" alt="sun" id="sunImage" style="height:50%;" >
+                    <img class="mx-auto d-block" src="/images/sun.jpg" alt="sun" id="sunImage" style="height:50%; visibility:hidden" >
                 </div>
                 <div class="col">
-                    <img class="mx-auto d-block" src="/images/water.jpg" alt="waterDrops" id="waterDropsImage" style="height:50%;"> 
+                    <img class="mx-auto d-block" src="/images/water.jpg" alt="waterDrops" id="waterDropsImage" style="height:50%; visibility:hidden"> 
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col">
                     <img src="/images/needfood.jpg" alt="need food" id="hungry" style="height:75%;
-                    width:75%">
+                    width:75%; visibility:visible">
                 </div>
                 <div class="col">
                     <img src="/images/needsun.jpg" alt="need energy" id="sunlight" style="height:75%;
-                    width:75%">                 
+                    width:75%; visibility:visible">                 
                 </div>
                 <div class="col">
                     <img src="/images/needwater.jpg" alt="need water" id="thirsty" style="height:75%;
-                    width:75%"> 
+                    width:75%; visibility:visible"> 
                 </div>
-            </div>
+            </div> -->
             <div class="row">
-                <div class="col-5"></div>
+                <div class="col-5">
+                    <img class="mx-auto d-block" src="/images/needfood.jpg" alt="need food" id="hungry" style="height:25%;
+                    width:25%; visibility:hidden">
+                </div>
                 <div class="col">
                     <div id="gameOverDiv" style="visibility:hidden" class = "row">
                         <p>You killed the plant.</p>
@@ -72,7 +75,12 @@
                         <img class="center-block" src="images/flytrap_1.jpg" alt="flyTrap Plant" id="flyPlant"> 
                     </div>
                 </div>
-                <div class="col-5"></div>
+                <div class="col-5">
+                    <img src="/images/needsun.jpg" alt="need energy" id="sunlight" style="height:25%;
+                    width:25%; visibility:hidden">   
+                    <img src="/images/needwater.jpg" alt="need water" id="thirsty" style="height:25%;
+                    width:25%; visibility:hidden"> 
+                </div>
             </div>
         </div>
             <!-- Resource Level -->
